@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#"
+     xml:base="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ">
+        <owl:versionIRI rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checks -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checks">
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksAfter">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checks"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedAfter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#DoWhileSatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeConditional -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeConditional">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checks"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeConditional"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeLoop -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeLoop">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checks"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeLoop"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForEachSatement"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForSatement"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#WhileSatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasClassFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasClassFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isClassFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasConditionalFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasConditionalFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOfConditional"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature">
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasLoopFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasLoopFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isLoopFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasMethodFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasMethodFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isMethodFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Method"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasFeature"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#instantiates -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#instantiates">
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInstantiatedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interrupts -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interrupts">
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interruptsIteration -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interruptsIteration">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interrupts"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByContinue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement"/>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interruptsLoop -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interruptsLoop">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#interrupts"/>
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByBreak"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#DoWhileSatement"/>
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForEachSatement"/>
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForSatement"/>
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#WhileSatement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedAfter">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeConditional -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeConditional">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeLoop -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isCheckedBeforeLoop">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isChecked"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isClassFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isClassFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOfConditional -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOfConditional">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInstantiatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInstantiatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByBreak -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByBreak">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByContinue -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByContinue">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isLoopFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isLoopFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isMethodFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isMethodFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isStoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isStoredBy">
+        <owl:inverseOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#stores"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isFeatureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#stores -->
+
+    <owl:ObjectProperty rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#stores">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+                    <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Arithmetic Operator is an operator that performs summation, subtraction, multiplication, or division between two Values, two Variables, or a Value and a Variable.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Arithmetic Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Array -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Array">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArrayList -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArrayList">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Assignment Operator is an Operator that attributes a Value to a Variable or that checks the equality between two Values, two Variables, or a Value and a Variable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Assignment Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Boolean -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Boolean">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Break Statement forcefully stops the Switch Statement or Loop Statement where it is written and makes the code jump to the first line after the broken Statement.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Break Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#CaseStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#CaseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:comment>switch (result){
+    case result_equals_this:
+        //execute code block
+        //apply BreakStatement
+    ...
+    case result_equals_that:
+        //execute other code block
+        //apply BreakStatement
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Char -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Char">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A class is a user-defined type of entity meant to classify it. For example, a Toyota Prius is a type of Car, so it belongs to the class Car.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Class</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A comparison Operator is an Operator that compares a two Variables, two Values, or a Value and a Variable.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Comparison Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Condition is the reason why a code block is executed. It is checked by a statement to decide whether a certain piece of code needs to run or not.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Condition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeConditional"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasConditionalFeature"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A conditional statement tells Java what course of action to take based on some given conditions.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Conditional Statement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#IfStatement"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#SwitchStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Continue Statement stops the current Iteration of the Loop Statement where it is written and jumps to the next Iteration without executing the remainder of the code block after it.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Continue Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#DoWhileSatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#DoWhileSatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksAfter"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>do{
+    //execute some code
+}while(Condition = True)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Double -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Double">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ElseStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:comment>if (condition){
+    //execute this code block
+}
+else{
+    //execute this other code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Float -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Float">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForEachSatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForEachSatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeLoop"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>for(element: collection){
+    //execute code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForSatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ForSatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeLoop"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>for(index = some Value, Condition = True, index = some other Value){
+    //execute code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#HashMap -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#HashMap">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#IfElseStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#IfElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:comment>if (Condition){
+    //execute code block
+}
+else if (different Condition){
+    //execute different code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#IfStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#IfStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:comment>if (condition){
+    //execute code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Int -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Int">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByContinue"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Iteration represents one round of the execution of a Loop Statement.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Iteration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Java -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Java">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Variable is an allocated piece of memory that stores a Value.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Java</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LogicalOperator -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LogicalOperator">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Logical Operator is an Operator that check the truth value of an expression.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Logical Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Long -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Long">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#isInterruptedByBreak"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#hasLoopFeature"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A loop statement tells Java to perform a set of actions over and over again until a stop condition is met.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Loop Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Method -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Method">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A method is a block of code that a program runs when it is called. A method can have zero or more Parameters and can return one or no Value of specified Type.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Object -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Object">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Object is one usable copy of the Class. If a Class is a blueprint, then an Object is the physical house itself.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Object</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Class"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Method"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Operator">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An Operator is a symbol or a combination of symbols that aims to modify or examnie one or mode Variables and Values.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Operator</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Parameter is a Method-specific variable that can take a bespoke Value of predefined Type fed by the programmer.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Parameter</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Short -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Short">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Statement">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A statement is an instruction that the program should respect when executing a block of code.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Statement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#String -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#String">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#SwitchStatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:comment>switch (result){
+    case 1
+    ...
+    case n
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The category to which a Variable belongs.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Type</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#PrimitiveType"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ReferenceType"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The piece of information that a Variable stores. This can be a number, a phrase, a letter etc.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Value</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Variable is a space allocated in memory where a Value of predefined Type can be stored.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Variable</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Parameter"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+        <rdfs:seeAlso rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#WhileSatement -->
+
+    <owl:Class rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#WhileSatement">
+        <rdfs:subClassOf rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#checksBeforeLoop"/>
+                <owl:someValuesFrom rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>while(Condition = True){
+    //execute code block
+}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#and -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#and"/>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#greater_or_equal -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#greater_or_equal">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#greater_than -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#greater_than">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_and -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_and">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LogicalOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_not -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_not">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LogicalOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_or -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#logical_or">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#LogicalOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#modulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#modulo">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#not -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#not"/>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#or -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#or"/>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#smaller_or_equal -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#smaller_or_equal">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#smaller_than -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#smaller_than">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#!= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#!=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">not equal to</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#* -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#*">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">multiplication</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#*= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#*=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">multiplied with</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#+ -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#+">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">addition</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#++">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">incremented by 1</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#+= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#+=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">incremented by</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#- -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#-">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">subtraction</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#&#45;&#45; -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#--">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">decremented by 1</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#-= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#-=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">decremented by</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#/ -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#/">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArithmeticOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">division</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#/= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#/=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">divided by</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equal to</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#== -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#==">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ComparisonOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equality check</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#break; -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#break;">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#mod= -->
+
+    <owl:NamedIndividual rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#mod=">
+        <rdf:type rdf:resource="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#AssignmentOperator"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">modulo</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Array"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Boolean"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Char"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#NumericType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ArrayList"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#HashMap"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#String"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#BreakStatement"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ConditionalStatement"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#ContinueStatement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Condition"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Iteration"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Java"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Object"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Type"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Value"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Variable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Double"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Float"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Int"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Long"/>
+            <rdf:Description rdf:about="http://www.kcl.ac.uk/Miruna-Pirvulescu/6CCS3PRJ#Short"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

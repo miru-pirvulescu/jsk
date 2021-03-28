@@ -1,0 +1,767 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mirun/ontologies/2021/0/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/mirun/ontologies/2021/0/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtExit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtExit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtExit"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#DoWhileLoop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesOnce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesOnce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executes"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedOnce"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesRepeatedly -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesRepeatedly">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executes"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedRepeatedly"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interrupts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interrupts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsAll -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsAll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interrupts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedAll"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BreakStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsOnce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsOnce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interrupts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedOnce"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ContinueStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtExit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtExit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedOnce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedOnce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedRepeatedly -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedRepeatedly">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterrupted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterrupted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedAll -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedAll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedOnce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterruptedOnce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#iteratesUntil -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#iteratesUntil">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of Condition found in a conditional statement.</rdfs:isDefinedBy>
+        <rdfs:label>BranchingCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BreakStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BreakStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsAll"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Break Statement forcefully stops the Switch Statement or Loop Statement where it is written and makes the code jump to the first line after the broken Statement.</rdfs:isDefinedBy>
+        <rdfs:label>BreakStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CaseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CaseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:label>Assesses whether a value matches the value of the switch variable.</rdfs:label>
+        <rdfs:label>CaseStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecuted"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedOnce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isExecutedRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Code Block is a collection of commands written in code and executed at runtime.</rdfs:isDefinedBy>
+        <rdfs:label>CodeBlock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlled"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Condition is an expression with a truth value that allows a Statement to execute (or not) a CodeBlock.</rdfs:isDefinedBy>
+        <rdfs:label>Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesOnce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A conditional statement tells Java what course of action to take based on some given conditions.</rdfs:isDefinedBy>
+        <rdfs:label>ConditionalStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ContinueStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#interruptsOnce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Continue Statement stops the current Iteration of the Loop Statement where it is written and jumps to the next Iteration without executing the remainder of the code block after it.</rdfs:isDefinedBy>
+        <rdfs:label>ContinueStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#DoWhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#DoWhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileStatementType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtExit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of WhileStatement that verifies its EnablingCondition after the first iteration of its corresponding CodeBlock.</rdfs:isDefinedBy>
+        <rdfs:label>DoWhileLoop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ElseIfStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ElseIfStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Alternative"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">In the case that the BranchingCondition of the IfStatement is false, ElseIfStatement executes its corresponding CodeBlock if an alternative BranchingCondition holds.</rdfs:isDefinedBy>
+        <rdfs:label>ElseIfStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ElseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#False"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">In the case that the BranchingCondition passed to the adjacent IfStatement is false, the CodeBlock attribute to the corresponding ElseStatement will be executed.</rdfs:isDefinedBy>
+        <rdfs:label>ElseStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtExit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#DoWhileLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A conditon that allows a while loop to keep repeating the code block.</rdfs:isDefinedBy>
+        <rdfs:label>EnablingCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForEachLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForEachLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#iteratesUntil"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of ForStatement that iterates over all the elements of a given collection.</rdfs:isDefinedBy>
+        <rdfs:label>ForEachLoop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#iteratesUntil"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfRange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of ForStatement that loops until the value of its iterator reaches a given value, as given in the StopCondition.</rdfs:isDefinedBy>
+        <rdfs:label>ForLoop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileStatementType"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A type of loop that executes a predefined number of times, given by its StopCondition.</rdfs:isDefinedBy>
+        <rdfs:label>ForStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#IfStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#IfStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#True"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">In the event that the passed BranchingCondition is evaluated as True, then the IfStatement will allow the execution of its corresponding CodeBlock.</rdfs:isDefinedBy>
+        <rdfs:label>IfStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A loop statement tells Java to perform a set of actions over and over again until a stop condition is met.</rdfs:isDefinedBy>
+        <rdfs:label>LoopStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Statement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A Statement is a CodeBlock that executes if it meets a Condition.</rdfs:isDefinedBy>
+        <rdfs:label>Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForEachLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ForLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of Condition that tells a For Loop when to stop</rdfs:isDefinedBy>
+        <rdfs:label>StopCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#SwitchStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Match"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SwitchStatement evalutes an expression against multiple values and executes the CodeBlock on the first matching branch</rdfs:isDefinedBy>
+        <rdfs:label>SwitchStatement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileStatementType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controlsAtEntry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The type of WhileStatement that checks its EnablingCondition before executing the first iteration.</rdfs:isDefinedBy>
+        <rdfs:label>WhileLoop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileStatementType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#WhileStatementType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#executesRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>WhileStatement</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A type of LoopStatement that executes until its EnablingCondition is no longer true.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Alternative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Alternative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Collection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Collection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfCollection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfCollection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfRange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EndOfRange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StopCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#False -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#False">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Invalid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Invalid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Match -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Match">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Range -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Range"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StatementChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#StatementChange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#True -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#True">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BranchingCondition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Valid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#Valid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#EnablingCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#met -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#met"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#unmet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#unmet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#BreakStatement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ConditionalStatement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#ContinueStatement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mirun/ontologies/2021/0/6CCS3PRJ#LoopStatement"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
