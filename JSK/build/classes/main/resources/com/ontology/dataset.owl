@@ -1,0 +1,1691 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/">
+        <owl:versionIRI rdf:resource="file:/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#contains -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#contains">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:label>contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:label>controls</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>controls at entry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtExit -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtExit">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtExit"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoWhileLoop"/>
+        <rdfs:label>controls at exit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isCoveredBy"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples"/>
+        <rdfs:label>covers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+        <rdfs:label>executes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesOnce -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesOnce">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedOnce"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:label>executes once</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesRepeatedly -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesRepeatedly">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedRepeatedly"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+        <rdfs:label>executes repeatedly</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:label>has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasType -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:label>has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#instantiates -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#instantiates">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInstantiatedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Object"/>
+        <rdfs:label>instantiates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interrupts -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interrupts">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:label>interrupts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsAll -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsAll">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interrupts"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedAll"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BreakStatement"/>
+        <rdfs:label>interrupts completely</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsOnce -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsOnce">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interrupts"/>
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedOnce"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ContinueStatement"/>
+        <rdfs:label>interrupts an iteration of some</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is controlled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is controlled at entry by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtExit -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtExit">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is controlled at exit by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isCoveredBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isCoveredBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is covered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is executed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedOnce -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedOnce">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is executed once by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedRepeatedly -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedRepeatedly">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is repeatedly executed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInstantiatedBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInstantiatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is instantiated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterrupted -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterrupted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is interrupted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedAll -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedAll">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>it completely interrupted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedOnce -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterruptedOnce">
+        <rdfs:subPropertyOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInterrupted"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is interrupted for one iteration only by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isOfType -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isOfType">
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:label>is of type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isStoredBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isStoredBy">
+        <owl:inverseOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#stores"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter"/>
+                    <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>is stored by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#iteratesUntil -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#iteratesUntil">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition"/>
+        <rdfs:label>iterates until</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#stores -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#stores">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value"/>
+        <rdfs:label>stores</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses">
+        <rdfs:domain rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Java"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:range rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/MethodType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/MethodType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A Method type can be any other type studied so far, but it can also be void.</rdfs:isDefinedBy>
+        <rdfs:label>Method Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples"/>
+        <rdfs:label>Primitive Type Examples</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples"/>
+        <rdfs:label>Reference Type Examples</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ArithmeticOperator -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ArithmeticOperator">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#arithmetic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>operators</rdfs:comment>
+        <rdfs:isDefinedBy>An operator that can perform simple arithmetic operations such as addition, subtraction, division, and multiplication.</rdfs:isDefinedBy>
+        <rdfs:label>Arithmetic Operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#AssignmentOperator -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#AssignmentOperator">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#assignment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>operators</rdfs:comment>
+        <rdfs:isDefinedBy>An operator that either assigns a variable a new value, or it increments/decrements its current value.</rdfs:isDefinedBy>
+        <rdfs:label>Assignment Operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BooleanType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BooleanType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A boolean type can take either value True or False.</rdfs:isDefinedBy>
+        <rdfs:label>Boolean Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of condition found in statements such as if and switch.</rdfs:isDefinedBy>
+        <rdfs:label>Branching Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BreakStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BreakStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsAll"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A break statement forcefully stops a switch or loop statement. It makes the code jump to the first line after its appearence.</rdfs:isDefinedBy>
+        <rdfs:label>Break Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ByteType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ByteType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#byte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Stores whole numbers from -128 to 127.</rdfs:isDefinedBy>
+        <rdfs:label>Byte Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CaseStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CaseStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>Assesses whether a value matches the value of the switch variable.</rdfs:isDefinedBy>
+        <rdfs:label>Case Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CharacterType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CharacterType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#char"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Primitive type that can store single characters, such as &apos;a&apos;, &apos;B&apos;, &apos;%&apos; etc. In implementation, it is written as char.</rdfs:isDefinedBy>
+        <rdfs:label>Character Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Constructor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#instantiates"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A class represents a blueprint for creating new objects</rdfs:isDefinedBy>
+        <rdfs:label>Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#contains"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecuted"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedOnce"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isExecutedRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A code block is a collection of commands written in code and executed at runtime.</rdfs:isDefinedBy>
+        <rdfs:label>Code Block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CollectionType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CollectionType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ReferenceType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ArrayList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#HashMap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A collection type can hold multiple values in different ways, such as an ordered list or an unordered list.</rdfs:isDefinedBy>
+        <rdfs:label>Collection Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ComparisonOperator -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ComparisonOperator">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#comparison"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>operators</rdfs:comment>
+        <rdfs:isDefinedBy>An operator that compares two variables, or a variable and a value.</rdfs:isDefinedBy>
+        <rdfs:label>Comparison Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlled"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A condition is an expression with a truth value that allows a Statement to execute (or not) a code block.</rdfs:isDefinedBy>
+        <rdfs:label>Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesOnce"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A conditional statement tells Java what course of action to take based on some given conditions.</rdfs:isDefinedBy>
+        <rdfs:label>Conditional Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Constructor -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Constructor">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A constructor is a special kind of method that is meant to initialise some information about an instantiated object. As the name suggests, it constructs the object.</rdfs:isDefinedBy>
+        <rdfs:label>Constructor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ContinueStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#interruptsOnce"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A continue statement stops the current Iteration of the loop statement where it is written and jumps to the next Iteration without executing the remainder of the code block after it.</rdfs:isDefinedBy>
+        <rdfs:label>Continue Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoWhileLoop -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoWhileLoop">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileStatementType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtExit"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of while statement that verifies its enabling condition after the first iteration of its corresponding code block.</rdfs:isDefinedBy>
+        <rdfs:label>Do While Loop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoubleType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoubleType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Double stores fractional numbers, sufficient for storing 15 decimal digits.</rdfs:isDefinedBy>
+        <rdfs:label>Double Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ElseIfStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ElseIfStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Alternative"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>In the case that the branching condition of the if statement is false, else-if-statement executes its corresponding code block if an alternative branching condition holds.</rdfs:isDefinedBy>
+        <rdfs:label>Else If Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ElseStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ElseStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#False"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>In the case that the branching condition passed to the adjacent if statement is false, the code block attribute to the corresponding else statement will be executed.</rdfs:isDefinedBy>
+        <rdfs:label>Else Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtExit"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#DoWhileLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A conditon that allows a while loop to keep repeating the code block.</rdfs:isDefinedBy>
+        <rdfs:label>Enabling Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#FloatType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#FloatType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits.</rdfs:isDefinedBy>
+        <rdfs:label>Float Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForEachLoop -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForEachLoop">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#iteratesUntil"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of for statement that iterates over all the elements of a given collection.</rdfs:isDefinedBy>
+        <rdfs:label>For Each Loop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForLoop -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForLoop">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#iteratesUntil"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfRange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of for statement that loops until the value of its iterator reaches a given value, as given in the stop condition.</rdfs:isDefinedBy>
+        <rdfs:label>For Loop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileStatementType"/>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A type of loop that executes a predefined number of times, given by its stop condition.</rdfs:isDefinedBy>
+        <rdfs:label>For Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#IfStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#IfStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#True"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>In the event that the passed branching condition is evaluated as true, then the if statement will allow the execution of its corresponding code block.</rdfs:isDefinedBy>
+        <rdfs:label>If Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#IntType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#IntType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Stores whole numbers from -2,147,483,648 to 2,147,483,647.</rdfs:isDefinedBy>
+        <rdfs:label>Int Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Java -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Java">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#uses"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>hello</rdfs:comment>
+        <rdfs:isDefinedBy>Java is a programming language used for a wide range of applications.</rdfs:isDefinedBy>
+        <rdfs:label>Java</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LogicalOperator -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LogicalOperator">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#logical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>operators</rdfs:comment>
+        <rdfs:isDefinedBy>An operator that evaluates the truth value of a logical expression.</rdfs:isDefinedBy>
+        <rdfs:label>Logical Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LongType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LongType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Long stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.</rdfs:isDefinedBy>
+        <rdfs:label>Long Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executesRepeatedly"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A loop statement tells Java to perform a set of actions over and over again until a stop condition is met.</rdfs:isDefinedBy>
+        <rdfs:label>Loop Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/MethodType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A method is a code block that runs when it is called.</rdfs:isDefinedBy>
+        <rdfs:label>Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType"/>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Java knows five primitive numeric types, and each is used to represent different types of numbers. The most frequently used numerical types are float and int.</rdfs:isDefinedBy>
+        <rdfs:label>Numeric Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Object -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasComponents"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isInstantiatedBy"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>An object, also called an instance, is a specific building based on the blueprint of the class to which it belongs.
+Where the class is the theoretical representation of a car, the object is an actual car in the dealership.</rdfs:isDefinedBy>
+        <rdfs:label>Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Operator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>operators</rdfs:comment>
+        <rdfs:isDefinedBy>An operator allows variables to change value, modify information within the program, or compute desired results.</rdfs:isDefinedBy>
+        <rdfs:label>Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample">
+        <rdfs:isDefinedBy>The types of operators</rdfs:isDefinedBy>
+        <rdfs:label>Operator Exaple</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Parameter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasType"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#stores"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A parameter is a predefined variable passed onto a method.</rdfs:isDefinedBy>
+        <rdfs:label>Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#PrimitiveType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A primitive data type specifies the size and type of variable values, and it has no additional methods.</rdfs:isDefinedBy>
+        <rdfs:label>Primitive Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ReferenceType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ReferenceType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Java recognises some new types, called reference types. These types can call methods and are implemented as classes.</rdfs:isDefinedBy>
+        <rdfs:label>Reference Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ReturnType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ReturnType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/MethodType"/>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>A return type defines the type of a value expected at the end of a method&apos;s computation. If the method is a coffee machine, then the returned value is the cup of coffee.</rdfs:isDefinedBy>
+        <rdfs:label>Return Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ShortType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ShortType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#NumericType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>Stores whole numbers from -32,768 to 32,767.</rdfs:isDefinedBy>
+        <rdfs:label>Short Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Statement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#executes"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CodeBlock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A statement is a code block that executes if it meets a condition.</rdfs:isDefinedBy>
+        <rdfs:label>Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForEachLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isControlledAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ForLoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of condition that tells a for loop when to stop executing.</rdfs:isDefinedBy>
+        <rdfs:label>Stop Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StringType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StringType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#CollectionType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#String"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>The String reference type extends the char primitive type by allowing the storing of multiple characters in a sequence. While essentially it is also a collection type, it is not often thought of in that way.</rdfs:isDefinedBy>
+        <rdfs:label>String Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#SwitchStatement -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:hasValue rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Match"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The switch statement evalutes an expression against multiple values and executes the code block on the first matching branch.</rdfs:isDefinedBy>
+        <rdfs:label>Switch Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#covers"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A type defines the kind of value that a variable can store.</rdfs:isDefinedBy>
+        <rdfs:label>Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#TypeExamples">
+        <rdfs:isDefinedBy>Type examples per kind.</rdfs:isDefinedBy>
+        <rdfs:label>Type Examples</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isOfType"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#isStoredBy"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A value is the specific element of a given type stored in a variable.</rdfs:isDefinedBy>
+        <rdfs:label>Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Variable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#hasType"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#stores"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>types</rdfs:comment>
+        <rdfs:isDefinedBy>A variable is a place in memory reserved for storing a specific type of variable for the purpose of using it later.</rdfs:isDefinedBy>
+        <rdfs:label>Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#VoidType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#VoidType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/MethodType"/>
+        <rdfs:comment>objects</rdfs:comment>
+        <rdfs:isDefinedBy>Void is a type assigned to methods that are not expected to return a value at the end of the computation.</rdfs:isDefinedBy>
+        <rdfs:label>Void Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileLoop -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileLoop">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileStatementType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controlsAtEntry"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>The type of while statement that checks its enabling condition before executing the first iteration.</rdfs:isDefinedBy>
+        <rdfs:label>While Loop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileStatementType -->
+
+    <owl:Class rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#WhileStatementType">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#controls"/>
+                <owl:someValuesFrom rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>statements</rdfs:comment>
+        <rdfs:isDefinedBy>A type of loop statement that executes until its enabling condition is no longer true.</rdfs:isDefinedBy>
+        <rdfs:label>While Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Alternative -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Alternative">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition"/>
+        <rdfs:label>Alternative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Array -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Array">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>Array []</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ArrayList -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ArrayList">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples"/>
+        <rdfs:label>ArrayList &lt;&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfCollection -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfCollection">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition"/>
+        <rdfs:label>End of Collection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfRange -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EndOfRange">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#StopCondition"/>
+        <rdfs:label>End of Range</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#False -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#False">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition"/>
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#HashMap -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#HashMap">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples"/>
+        <rdfs:label>HashMap&lt;&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Invalid -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Invalid">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition"/>
+        <rdfs:label>Invalid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Match -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Match">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition"/>
+        <rdfs:label>Match</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#String -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#String">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/ReferenceTypeExamples"/>
+        <rdfs:label>String: &quot;a longer collection of charachers like the one in these quotation marks&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#True -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#True">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BranchingCondition"/>
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Condition"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Valid -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#Valid">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#EnablingCondition"/>
+        <rdfs:label>Valid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#arithmetic -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#arithmetic">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+        <rdfs:label>arithmetic operators: +, -, /, *, %</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#assignment -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#assignment">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+        <rdfs:label>assignment operators: =, +=, -=, /=, *=, %=, ++, --</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#boolean -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#boolean">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>boolean: true/false</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#byte -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#byte">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>byte: -128, ..., -1, 0, 1, ..., 127</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#char -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#char">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>char: a, b, c, ..., @, #, !...</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#comparison -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#comparison">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+        <rdfs:label>comparison operators: ==, !=, &gt;=, &lt;=, &gt;, &lt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#double -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#double">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>double: 0.1, 0.2, 0.3, ...</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#float -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#float">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>float: 0.1, 0.2, 0.3, ...</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#integer -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#integer">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>int: -2,147,483,648, ..., -2, -1, 0, 1, 2, ..., 2,147,483,647</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#logical -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#logical">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#OperatorExample"/>
+        <rdfs:label>logical operators: &amp;&amp;, ||, !</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#long -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#long">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>long: -9,223,372,036,854,775,808, ..., -1, 0, 1, ... 9,223,372,036,854,775,807</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#short -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#short">
+        <rdf:type rdf:resource="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/PrimitiveTypeExamples"/>
+        <rdfs:label>short: -32,768, ..., -1, 0, 1, ..., 32,767</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#BreakStatement"/>
+            <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ConditionalStatement"/>
+            <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#ContinueStatement"/>
+            <rdf:Description rdf:about="file:/C:/Users/mirun/Desktop/PRJ/JavaStarterKit/src/main/resources/com/ontology/#LoopStatement"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
